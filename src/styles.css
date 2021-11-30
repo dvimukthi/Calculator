@@ -23,3 +23,7 @@ body{
     background-color: blanchedalmond;
     display: flex;
 }
+
+.output .previous-operand {
+    color: blue;
+}
