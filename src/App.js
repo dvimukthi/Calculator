@@ -16,6 +16,7 @@ function App() {
       <button>5</button>
       <button>6</button>
       <button>+</button>
+      <button>7</button>
     </div>
   );
 }
