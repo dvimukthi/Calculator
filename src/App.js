@@ -9,6 +9,7 @@ function App() {
       <button>DEL</button>
       <button>/</button>
       <button>1</button>
+      <button>2</button>
     </div>
   );
 }
