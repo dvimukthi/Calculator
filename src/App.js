@@ -17,6 +17,7 @@ function App() {
       <button>6</button>
       <button>+</button>
       <button>7</button>
+      <button>8</button>
     </div>
   );
 }
