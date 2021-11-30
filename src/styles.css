@@ -20,4 +20,6 @@ body{
 
 .output {
     grid-column: 1 / -1;
+    background-color: blanchedalmond;
+    display: flex;
 }
