@@ -21,6 +21,7 @@ function App() {
       <button>9</button>
       <button>-</button>
       <button>.</button>
+      <button>0</button>
     </div>
   );
 }
