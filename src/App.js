@@ -7,6 +7,7 @@ function App() {
       </div>
       <button className="span-two">AC</button>
       <button>DEL</button>
+      <button>/</button>
     </div>
   );
 }
