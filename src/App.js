@@ -13,6 +13,7 @@ function App() {
       <button>3</button>
       <button>*</button>
       <button>4</button>
+      <button>5</button>
     </div>
   );
 }
