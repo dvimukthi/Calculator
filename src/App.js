@@ -4,12 +4,19 @@ import "./styles.css";
 function reducer(state, action) {}
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, {});
+  const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
+    reducer,
+    {}
+  );
   return (
     <div className="Calculator">
       <div className="output">
-        <div className="previous-operand"></div>
-        <div className="current-operand"></div>
+        const [{(currentOperand, previousOperand, operation)}, dispatch] =
+        useReducer(
+        <div className="previous-operand">
+          {previousOperand} {operation}
+        </div>
+        <div className="current-operand">{currentOperand}</div>
       </div>
       <button className="span-two">AC</button>
       <button>DEL</button>
