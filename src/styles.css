@@ -27,3 +27,7 @@ body{
 .output .previous-operand {
     color: blue;
 }
+
+.output .current-operand {
+    color: lightseagreen;
+}
