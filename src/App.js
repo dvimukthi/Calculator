@@ -68,6 +68,15 @@ function reducer(state, { type, payload }) {
           currentOperand: null,
         };
       }
+      if (state.currentOperand == null) return state;
+      if (state.currentOperand.length === 1) {
+        return { ...state, currentOperand: null };
+      }
+
+      return {
+        ...state,
+        currentOperand: state.currentOperand.slice(0, -1),
+      };
     case ACTIONS.EVALUATE:
       if (
         state.operation == null ||
@@ -129,7 +138,9 @@ function App() {
       >
         AC
       </button>
-      <button>DEL</button>
+      <button onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
+        DEL
+      </button>
       <OperationButton operation="/" dispatch={dispatch} />
       <DigitButton digit="1" dispatch={dispatch} />
       <DigitButton digit="2" dispatch={dispatch} />
