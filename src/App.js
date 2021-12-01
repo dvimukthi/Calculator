@@ -24,6 +24,8 @@ function reducer(state, { type, payload }) {
         ...state,
         currentOperand: `${state.currentOperand || ""}${payload.digit}`,
       };
+    case ACTIONS.CLEAR:
+      return {};
   }
 }
 
